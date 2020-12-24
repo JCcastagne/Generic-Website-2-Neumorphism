@@ -148,10 +148,17 @@ nav{
 .nav a:visited,
 .nav a:active,
 .nav a:link{
-  padding-left: 2em;
+  padding: 0.5em 1em;
   text-decoration: none;
   color: var(--jetBlack);
   text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15), -4px -4px 6px rgba(255, 255, 255, 0.15);
+  transition: all;
+}
+
+.nav a:hover,
+.nav a:focus{
+  border-radius: 12.5px;
+  box-shadow: inset 12px 12px 16px 0 var(--blackShadow), inset -8px -8px 12px 0 var(--whiteShadow);
 }
 
 .heroBanner{
@@ -211,14 +218,15 @@ main section{
   border-radius: 12.5px;
   box-shadow: 12px 12px 16px 0 var(--blackShadow), -8px -8px 12px 0 var(--whiteShadow);
   width: 80vw;
-  min-height: 200px;
+  min-height: 250px;
 }
 
 .firstSec,
 .secondSec,
-.thirdSec{
-  /* max-width: 980px; */
+.thirdSec,
+.finalSec{
   max-width: 840px;
+  /* min-height: 250px; */
 }
 
 main .thirdSec{
@@ -235,7 +243,7 @@ section .content{
   grid-area: "content";
   max-height: 33vh;
 
-  padding: 2em 2em 2em 0em;
+  /* padding: 2em 2em 2em 0em; */
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -259,6 +267,11 @@ section .content p{
   box-shadow: 12px 12px 16px 0 var(--blackShadow), -8px -8px 12px 0 var(--whiteShadow);
 }
 
+.content a:focus,
+.content a:hover{
+  box-shadow: inset 12px 12px 16px 0 var(--blackShadow), inset -8px -8px 12px 0 var(--whiteShadow);
+}
+
 /* all ^*/
 
 /* * pages^ * */
@@ -278,6 +291,7 @@ section .content p{
   border-radius: 1900px;
   transform: scale(2);
   opacity: 0%;
+  min-height: 300px;
 }
 #creditCard.animate{
   animation: card 0.7s ease-in-out forwards;
@@ -286,6 +300,7 @@ section .content p{
 #chain{
   transform: scale(1);
   opacity: 0%;
+  min-height: 250px;
 }
 #chain.animate{
   animation: chain 0.7s ease-in-out forwards;
@@ -294,6 +309,7 @@ section .content p{
 #cashback{
   transform: scale(0.75);
   opacity: 0%;
+  min-height: 250px;
 }
 
 #cashback.animate{

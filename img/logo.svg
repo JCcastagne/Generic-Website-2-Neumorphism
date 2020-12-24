@@ -16,14 +16,18 @@
 
       .cls-4 {
         fill: none;
-        stroke: #f2f2f2;
         stroke-linejoin: round;
         stroke-width: 20px;
+        stroke: url(#linear-gradient-2);
       }
     </style>
     <linearGradient id="linear-gradient" x1="-77.05" y1="133.45" x2="919.05" y2="708.55" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#d1d9e6" stop-opacity="0"/>
       <stop offset="1" stop-color="#d1d9e6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="131.49" y1="414.97" x2="710.51" y2="414.97" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d1d9e6"/>
+      <stop offset="1" stop-color="#858a91"/>
     </linearGradient>
   </defs>
   <g class="cls-1">
