@@ -152,7 +152,7 @@ nav{
   text-decoration: none;
   color: var(--jetBlack);
   text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15), -4px -4px 6px rgba(255, 255, 255, 0.15);
-  transition: all;
+  transition: 0.3s all ease-in-out;
 }
 
 .nav a:hover,
@@ -318,7 +318,83 @@ section .content p{
 }
 
 
+.finalSec{
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  
+  border: 3px var(--white2) solid;
+  box-shadow: 12px 12px 16px 0 var(--blackShadow), -8px -8px 12px 0 var(--whiteShadow);
+}
 
+#finalPageCover{
+  animation: slide 120s linear infinite;
+  z-index: -1;
+  /* transform: scale(3) rotate(-22.5deg) translate(-33%, -15%) */
+}
+
+h5{
+  font-size: var(--seven);
+  padding: 0.5em;
+  max-width: 571px;
+  transform: translate(20%);
+
+  background: linear-gradient(170deg, rgb(103, 103, 103) 0%, var(--jetBlack) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15), -4px -4px 6px rgba(255, 255, 255, 0.01);
+}
+
+.finalSec a:active,
+.finalSec a:visited,
+.finalSec a:link{
+  color: var(--jetBlack);
+  text-decoration: none;
+  margin: auto;
+  font-style: normal;
+  max-width: 211px;
+  max-height: 69px;
+  font-size: var(--three);
+  font-weight: 600;
+  padding: 0.75em 1.25em;
+  border-radius: 12.5px;
+  box-shadow: 12px 12px 16px 0 var(--blackShadow), -8px -8px 12px 0 var(--whiteShadow);
+  transform: translateY(10vh);
+  transition: 0.3s all ease-in-out;
+}
+
+.finalSec a:focus,
+.finalSec a:hover{
+  box-shadow: inset 12px 12px 16px 0 var(--blackShadow), inset -8px -8px 12px 0 var(--whiteShadow);
+}
+
+footer{
+  position: sticky;
+  top: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+footer p{
+  padding: 0.5em 1em;
+  color: rgba(63, 63, 63, 0.363);
+}
+footer a,
+footer a:active,
+footer a:visited,
+footer a:link{
+  color: rgba(63, 63, 63, 0.363);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+footer a:hover{
+  color: black;
+  font-weight: 600;
+}
 
 
 /* * end of pages^ * */
@@ -400,6 +476,18 @@ section .content p{
     transform: translateY(0em);
     opacity: 100%;
     /* transform: rotate(0deg); */
+  }
+}
+
+@keyframes slide{
+  0%{
+    transform: scale(4.5) rotate(-22.5deg) translate(-14%, -15%);
+  }
+  50%{
+    transform: scale(4.5) rotate(-22.5deg) translate(17%, -15%);
+  }
+  100%{
+    transform: scale(4.5) rotate(-22.5deg) translate(-14%, -15%);
   }
 }
 
